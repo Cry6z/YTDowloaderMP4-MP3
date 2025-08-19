@@ -4,10 +4,11 @@ Project gabut pyhton yang berfungsi mendownload **Video (MP4)** atau **Audio (MP
 
 ## Cara Pakai
 1. Install dependencies:
+ ```bash
 pip install -r requirements.txt
-2. Install FFmpeg (untuk MP3)
+3. Install FFmpeg (untuk MP3)
 
-3. Jalankan:
+4. Jalankan:
 python downloader.py
 Masukkan link YouTube & pilih mode:
 
