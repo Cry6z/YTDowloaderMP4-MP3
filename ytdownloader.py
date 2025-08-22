@@ -1,14 +1,16 @@
 import os
 from yt_dlp import YoutubeDL
 
-def download_video(url, path="downloads"):
+DEFAULT_PATH = os.path.join(os.path.expanduser("~"), "Downloads")
+
+def download_video(url, path=DEFAULT_PATH):
     if not os.path.exists(path):
         os.makedirs(path)
 
     ydl_opts = {
         'outtmpl': f'{path}/%(title)s.%(ext)s',
-        'format': 'bestvideo+bestaudio/best',  # download video + audio terbaik
-        'merge_output_format': 'mp4'           # gabung ke format mp4
+        'format': 'bestvideo+bestaudio/best',  
+        'merge_output_format': 'mp4'
     }
 
     with YoutubeDL(ydl_opts) as ydl:
@@ -17,14 +19,13 @@ def download_video(url, path="downloads"):
         print(f"✅ Video berhasil didownload ke folder: {path}")
 
 
-def download_audio(url, path="downloads"):
+def download_audio(url, path=DEFAULT_PATH):
     if not os.path.exists(path):
         os.makedirs(path)
-
     ydl_opts = {
         'outtmpl': f'{path}/%(title)s.%(ext)s',
         'format': 'bestaudio/best',
-        'postprocessors': [{  # convert ke mp3
+        'postprocessors': [{ 
             'key': 'FFmpegExtractAudio',
             'preferredcodec': 'mp3',
             'preferredquality': '192',
