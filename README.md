@@ -9,3 +9,6 @@ Dari Python:
 pip install -r requirements.txt
 python ytdownloader.py
 ```
+## 💻 Bisa jadi. **.exe**
+
+Pake **Pyinstaller**
