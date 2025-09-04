@@ -1,20 +1,14 @@
-# 🎬 YouTube Downloader (Python)
+📥 YouTube Downloader
 
- Project sekolah python yang berfungsi untunk mendowload**Video (MP4)** atau **Audio (MP3)** dari YouTube menggunakan Python + yt-dlp.  
+Program sederhana untuk download video dari YouTube menggunakan Python.
+Bisa MP4 & MP3
 
-## Cara Pakai
-1. Install dependencies:
-`pip install -r requirements.txt`
+🚀 Cara Pakai
+Dari Python:
+```
+pip install -r requirements.txt
+python ytdownloader.py
+```
+## 💻 Bisa jadi. **.exe**
 
-2. Install **FFmpeg** (Wajib untuk MP3)  
-   [FFmpeg.org](https://ffmpeg.org/download.html), extract, tambahkan ke PATH  
-
-3. Jalankan program:
-`python downloader.py`
-
-4. Masukkan link YouTube, lalu pilih mode:
-   - `1` → Video MP4  
-   - `2` → Audio MP3
-
-## Hasil
-File otomatis tersimpan di folder `downloads/`.
+Pake **Pyinstaller**
