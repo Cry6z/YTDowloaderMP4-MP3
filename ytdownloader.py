@@ -14,7 +14,7 @@ def download_video(url, path=DEFAULT_PATH):
     }
 
     with YoutubeDL(ydl_opts) as ydl:
-        print("🔽 Sedang mendownload video (MP4)...")
+        print("🔽 Sedang mendownload MP4...")
         ydl.download([url])
         print(f"✅ Video berhasil didownload ke folder: {path}")
 
@@ -33,19 +33,19 @@ def download_audio(url, path=DEFAULT_PATH):
     }
 
     with YoutubeDL(ydl_opts) as ydl:
-        print("🔽 Sedang mendownload audio (MP3)...")
+        print("🔽 Sedang mendownload MP3...")
         ydl.download([url])
         print(f"✅ Audio berhasil didownload ke folder: {path}")
 
 
 if __name__ == "__main__":
-    print("=== 🎬 YouTube Downloader ===")
-    link = input("Masukkan link YouTube: ")
-    mode = input("Pilih mode (1 = Video MP4, 2 = Audio MP3): ")
+    print("Yutup Downloader ")
+    link = input("Masukkan link Yutup: ")
+    mode = input("Pilih format (1 = Video MP4, 2 = Audio MP3): ")
 
     if mode == "1":
         download_video(link)
     elif mode == "2":
         download_audio(link)
     else:
-        print("❌ Pilihan tidak valid!")
+        print(" Pilihan tidak benar. Ulangi lagi.")
