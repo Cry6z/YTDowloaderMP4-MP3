@@ -1,4 +1,4 @@
-# youTubedDownloader
+# YouTube Downloader
 
 program sederhana untuk download video dari YouTube menggunakan Python.
 bisa MP4 & MP3
