@@ -1,14 +1,14 @@
-📥 YouTube Downloader
+# youTubedDownloader
 
-Program sederhana untuk download video dari YouTube menggunakan Python.
-Bisa MP4 & MP3
+program sederhana untuk download video dari YouTube menggunakan Python.
+bisa MP4 & MP3
 
-🚀 Cara Pakai
-Dari Python:
+## Cara Pakai
+dari Python:
 ```
 pip install -r requirements.txt
 python ytdownloader.py
 ```
-## 💻 Bisa jadi. **.exe**
+## 💻 bisa jadi. **.exe**
 
-Pake **Pyinstaller**
+Pake **pyinstaller**
